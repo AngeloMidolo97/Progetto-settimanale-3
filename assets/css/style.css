@@ -84,6 +84,19 @@ body {
     right: 38%;
 }
 
+@media  screen and (min-width: 380px) {
+    .container {
+        display: inline-block;
+        width: 100%;
+        right: -12px;
+        top: 70px;
+    }
+
+    .animazione, .animazione span {
+        display: none;
+    }
+}
+
 .calcolatrice {
     border: 1px solid white;
     border-radius: 12px;
