@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    overflow: hidden;
+}
+
+.animazione {
+    position: absolute;
+    bottom: -700px;
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.animazione span {
+    height: 60px;
+    width: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    animation: move 10s linear infinite;
+    z-index: 0;
+}
+
+@keyframes move {
+    100% {
+        transform: translateY(-90vh);
+    }
+}
+
+.animazione span.uno {
+    animation-delay: 2s;
+    transform: scale(3);
+}
+
+.animazione span.due {
+    animation-delay: 4.5s;
+    transform: scale(2);
+}
+
+.animazione span.tre {
+    animation-delay: 7s;
+    transform: scale(0.5);
+}
+
+.animazione span.quattro {
+    animation-delay: 1s;
+    transform: scale(5);
+}
+
+.animazione span.cinque {
+    animation-delay: 5s;
+    transform: scale(4);
+}
+
+.animazione span.sei {
+    animation-delay: 6s;
+    transform: scale(2.5);
+}
+
+.animazione span.sette {
+    animation-delay: 4.5s;
+    transform: scale(3);
+}
+
+/* bbbb */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    right: 38%;
+}
+
+.calcolatrice {
+    border: 1px solid white;
+    border-radius: 12px;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+input {
+    width: 97%;
+    height: 70px;
+    margin: 5px;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    box-shadow: 0px 1px 3px white;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 1.5rem;
+}
+
+button {
+    height: 75px;
+    width: 75px;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    margin: 5px;
+    box-shadow: 0px 1px 3px white;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.uguale {
+    width: 46.5%;
+    background-color: #ffa500;
+}
+
+.uguale:hover {
+    background-color: #cc8500;
+}
+
+button:nth-child(21) {
+    background-color: rgba(207, 59, 59, 0.9);
+}
+
+button:nth-child(21):hover {
+    background-color: rgba(158, 42, 42, 0.9);
+}
+
+.cancella {
+    background-color: rgba(207, 59, 59, 0.9);
+}
+
+.cancella:hover {
+    background-color: rgba(158, 42, 42, 0.9);
+}
+
+.calc {
+    background-color: #008793;
+}
+
+.calc:hover {
+    background-color: #00656e;
+}

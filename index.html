@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto settimanale 3 - Calcolatrice</title>
+    <meta name="description" content="Creare una clacolatrice con HTML CSS Javascript">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="animazione">
+        <span class="uno"></span>
+        <span class="due"></span>
+        <span class="tre"></span>
+        <span class="quattro"></span>
+        <span class="cinque"></span>
+        <span class="sei"></span>
+        <span class="sette"></span>
+    </div>
+    <div class="container">
+        <div class="calcolatrice">
+            <input type="text" name="valore" id="valore" disabled>
+            <div id="buttons">
+                <button type="button" id="1" onclick="getId(this.id)">1</button>
+                <button type="button" id="2" onclick="getId(this.id)">2</button>
+                <button type="button" id="3" onclick="getId(this.id)">3</button>
+                <button type="button" class="calc" id="/" onclick="getId(this.id)">/</button><br>
+
+                <button type="button" id="4" onclick="getId(this.id)">4</button>
+                <button type="button" id="5" onclick="getId(this.id)">5</button>
+                <button type="button" id="6" onclick="getId(this.id)">6</button>
+                <button type="button" class="calc" id="*" onclick="getId(this.id)">x</button><br>
+
+                <button type="button" id="7" onclick="getId(this.id)">7</button>
+                <button type="button" id="8" onclick="getId(this.id)">8</button>
+                <button type="button" id="9" onclick="getId(this.id)">9</button>
+                <button type="button" class="calc" id="-" onclick="getId(this.id)">-</button><br>
+
+                <button type="button" class="cancella" id="c" onclick="cancellaUltimo()">C</button>
+                <button type="button" id="0" onclick="getId(this.id)">0</button>
+                <button type="button" id="." onclick="getId(this.id)">.</button>
+                <button type="button" class="calc" id="+" onclick="getId(this.id)">+</button><br>
+
+                <button class="uguale" type="button" id="ac" onclick="cancella()">AC</button>
+                <button class="uguale" type="button" id="=" onclick="risultato()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
