@@ -84,7 +84,7 @@ body {
     right: 38%;
 }
 
-@media  screen and (min-width: 380px) {
+@media  screen and (max-width: 600px) {
     .container {
         display: inline-block;
         width: 100%;
